@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Movies-Info</title>
-    <link rel="stylesheet" href="https://bootswatch.com/cyborg/bootstrap.min.css">
-   
+     <link rel="stylesheet" href="style.css" />
+  <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script>
+  <script src="script.js"></script>
+  <title>Movie Search | OMDb API</title>
 	<style>
 		
 		
@@ -13,25 +14,25 @@
 			
 
   </head>
-  <body style="background-image:url('http://www.fundayoutdoormovies.com/wp-content/uploads/2014/05/popcorn.jpg')">
-	   <h1 style="color:Red;style="font-size:80px;"> Search For Movies </h1>  
+  <body style="background-image:url('http://www.fundayoutdoormovies.com/wp-content/uploads/2014/05/popcorn.jpg')" ng-app="OMDbAPISearch">
+	   <div class="container" ng-controller="searchMovies">
+	  <h1 style="color:Red;style="font-size:80px;"> Search For Movies </h1>  
 	 <marquee behavior="scroll" direction="right" bgcolor="DeepPink"> Welcome to Movies Masti...!</marquee>
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="index.html">MovieInfo</a>
-        </div>
-      </div>
-    </nav>
 
-    <div class="container">
-    	<div class="formArea">
+        </div>
+     
+    
+
+    	
 	    	
 	    	<form id="searchForm">
-			
+		   <div class="search">	
 	    	<center> <input type="text" class="form-control" id="searchText" placeholder="Search Movies..." size="50" height="30">
 			
-		  <button id="searchButton1" type="button" class="btn btn-info">Search</button> </center>
+		  <button id="searchButton1" type="button" class="btn btn-info" ng-click="fetch()">Search</button> </center>
+		
+       <div class="clear"></div>
+      </div>
 		<br>							       
 		<center> <input type="image" src="https://1.bp.blogspot.com/-UZVldcpfw4A/VrRHeCjJZBI/AAAAAAAAGus/vSxEDVSXa-Q/s1600/orangeblue.jpg" alt="Submit" width="600" height="300"> </center>
 	    	</br>
@@ -42,12 +43,17 @@
     <div class="container">
       <div id="movies" class="row"></div>
     </div>
+				  
+	<body ng-app="OMDbAPISearch">
+  <div class="container" ng-controller="searchMovies">
 
-    <script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <script src="js/main.js"></script>
+  <div class="results">
+
+      <div class="result" movie-srch-results ng-repeat="movie in movieResults"></div>
+
+    </div>
+    <div class="noResults"></div>
+
+  </div>
   </body>
 </html>
