@@ -1,127 +1,28 @@
-<h1>BJ's Top 10 Movies of 2014</h1>
-
-<p> <a href="http://www.omdbapi.com/">the Open Movie Database's API</a>. Click any movie to show its details.</p>
-
-<div id="movies">
+<span>
+         
+         <div class="move-title">{{movie.Title}} ({{movie.Year}})</div>
+         <div><strong>Starring:</strong> {{movie.details.Actors}}</div>
+         <div><strong>Rated:</strong> {{movie.details.Rated}}</div>
+         <div><strong>Runtime:</strong> {{movie.details.Runtime}}</div>
+         <div><strong>Genre:</strong> {{movie.details.Genre}}</div>
+         <div><strong>Director:</strong> {{movie.details.Director}}</div>
+         <div><strong>Writer:</strong> {{movie.details.Writer}}</div>
+         <div><strong>Language:</strong> {{movie.details.Language}}</div>
+         <div><strong>Studio:</strong> {{movie.details.Production}}</div>
+         
+       </span>
+       
+       <span>
+         
+         <div><strong>Plot: </strong>{{movie.details.Plot}}</div>
+         
+       </span>
+       
+       <div class="clear"></div>
+       
+       <div class="reviews">
+         
+         <em>IMDB Rating: {{movie.details.imdbRating}} | Rotten Tomatoes Meter: {{movie.details.tomatoMeter}} ({{movie.details.tomatoImage}}) | Metascore: {{movie.details.Metascore}}</em>
+         
+       </div>
   
-  <div class="movie" data-imdb-id="tt1798709">
-    <header>
-      <h2 class="movie-title">Her</h2>
-      <span class="movie-rating">5/5</span>
-    </header>
-    <div class="movie-details">
-      <div class="movie-details-top">
-        <span class="movie-details-arrow">&raquo;</span> Details
-      </div>
-    </div>
-  </div>
-  
-  <div class="movie" data-imdb-id="tt1504320">
-    <header>
-      <h2 class="movie-title">The King's Speech</h2>
-      <span class="movie-rating">5/5</span>
-    </header>
-    <div class="movie-details">
-      <div class="movie-details-top">
-        <span class="movie-details-arrow">&raquo;</span> Details
-      </div>
-    </div>
-  </div>
-  
-  <div class="movie" data-imdb-id="tt1605717">
-    <header>
-      <h2 class="movie-title">Frank</h2>
-      <span class="movie-rating">4.5/5</span>
-    </header>
-    <div class="movie-details">
-      <div class="movie-details-top">
-        <span class="movie-details-arrow">&raquo;</span> Details
-      </div>
-    </div>
-  </div>
-  
-  <div class="movie" data-imdb-id="tt1821549">
-    <header>
-      <h2 class="movie-title">Nebraska</h2>
-      <span class="movie-rating">4.5/5</span>
-    </header>
-    <div class="movie-details">
-      <div class="movie-details-top">
-        <span class="movie-details-arrow">&raquo;</span> Details
-      </div>
-    </div>
-  </div>
-  
-  <div class="movie" data-imdb-id="tt2278388">
-    <header>
-      <h2 class="movie-title">The Grand Budapest Hotel</h2>
-      <span class="movie-rating">4.5/5</span>
-    </header>
-    <div class="movie-details">
-      <div class="movie-details-top">
-        <span class="movie-details-arrow">&raquo;</span> Details
-      </div>
-    </div>
-  </div>
-  
-  <div class="movie" data-imdb-id="tt0310281">
-    <header>
-      <h2 class="movie-title">A Mighty Wind</h2>
-      <span class="movie-rating">4.5/5</span>
-    </header>
-    <div class="movie-details">
-      <div class="movie-details-top">
-        <span class="movie-details-arrow">&raquo;</span> Details
-      </div>
-    </div>
-  </div>
-  
-  <div class="movie" data-imdb-id="tt2359024">
-    <header>
-      <h2 class="movie-title">Blue Ruin</h2>
-      <span class="movie-rating">4/5</span>
-    </header>
-    <div class="movie-details">
-      <div class="movie-details-top">
-        <span class="movie-details-arrow">&raquo;</span> Details
-      </div>
-    </div>
-  </div>
-  
-  <div class="movie" data-imdb-id="tt1714915">
-    <header>
-      <h2 class="movie-title">Only Lovers Left Alive</h2>
-      <span class="movie-rating">4/5</span>
-    </header>
-    <div class="movie-details">
-      <div class="movie-details-top">
-        <span class="movie-details-arrow">&raquo;</span> Details
-      </div>
-    </div>
-  </div>
-  
-  <div class="movie" data-imdb-id="tt2179116">
-    <header>
-      <h2 class="movie-title">The Kings of Summer</h2>
-      <span class="movie-rating">4/5</span>
-    </header>
-    <div class="movie-details">
-      <div class="movie-details-top">
-        <span class="movie-details-arrow">&raquo;</span> Details
-      </div>
-    </div>
-  </div>
-  
-  <div class="movie" data-imdb-id="tt0113677">
-    <header>
-      <h2 class="movie-title">Living in Oblivion</h2>
-      <span class="movie-rating">4/5</span>
-    </header>
-    <div class="movie-details">
-      <div class="movie-details-top">
-        <span class="movie-details-arrow">&raquo;</span> Details
-      </div>
-    </div>
-  </div>
-  
-</div>
