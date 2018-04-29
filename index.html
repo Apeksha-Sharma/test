@@ -10,15 +10,21 @@
 			
 
   </head>
+	
+	
+       <input id="theSearch" ng-model="searchparam" placeholder="movie name" type="text" ngTrim="true" />
+	
+	
+	
   <body style="background-image:url('http://www.fundayoutdoormovies.com/wp-content/uploads/2014/05/popcorn.jpg')" ng-app="OMDbAPISearch">
 	   <div class="container" ng-controller="searchMovies">
 	  <h1 style="color:Red;style="font-size:80px;"> Search For Movies </h1>  
 	 <marquee behavior="scroll" direction="right" bgcolor="DeepPink"> Welcome to Movies Masti...!</marquee>
 
         </div>
-     <form id="searchForm">
+     <form>
 		   <div class="search">	
-	    	<center> <input type="text" class="form-control" id="searchText" placeholder="Search Movies..." size="50" height="30">
+	    	<center> <input id="theSearch" ng-model="searchparam" placeholder="Search Movies..." type="text" ngTrim="true" size="50" height="30">
 			
 				<button ng-click="fetch()">Search </center> </button>
 	<center><img src="https://camo.githubusercontent.com/f3a22e575e499c316dfef5ceaf3e2745bf631e60/68747470733a2f2f312e62702e626c6f6773706f742e636f6d2f2d555a566c646370667734412f5672524865436a4a5a42492f41414141414141414775732f7653784544565358612d512f73313630302f6f72616e6765626c75652e6a7067" height="400" width="600"></center>									  
