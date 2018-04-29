@@ -21,7 +21,7 @@
                   // loop through each movie, and pull the details using the IMDB ID
                   $http({
                     method: $scope.method,
-                    url: 'https://www.omdbapi.com/?i=' + obj.imdbID + '&plot=full&r=json&tomatoes=true'
+                    url: 'http://www.omdbapi.com/?i=tt3896198&apikey=bb4738f5'
                   }).
                   then(function(response) {
                     // extend the details to the parent
