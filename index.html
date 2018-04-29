@@ -6,10 +6,6 @@
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.1/angular.min.js"></script>
   <script src="script.js"></script>
   <title>Movie Search | OMDb API</title>
-	<style>
-		
-		
-	  </style>
 	  <link href="style.css" rel="stylesheet">
 			
 
@@ -20,12 +16,7 @@
 	 <marquee behavior="scroll" direction="right" bgcolor="DeepPink"> Welcome to Movies Masti...!</marquee>
 
         </div>
-     
-    
-
-    	
-	    	
-	    	<form id="searchForm" action="movieResults.html">
+     <form id="searchForm" action="movieResults.html">
 		   <div class="search">	
 	    	<center> <input type="text" class="form-control" id="searchText" placeholder="Search Movies..." size="50" height="30">
 			
@@ -34,9 +25,7 @@
        <div class="clear"></div>
       
 			 </form>				  
-	
-
-  <div class="results">
+	<div class="results">
 
       <div class="result" movie-srch-results ng-repeat="movie in movieResults"></div>
 
